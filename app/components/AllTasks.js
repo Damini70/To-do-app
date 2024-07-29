@@ -19,7 +19,9 @@ function AllTasks() {
   useEffect(() => {
     if (data) {
       const string = JSON.stringify(data);
-      localStorage.setItem("data", string);
+       if (typeof window !== 'undefined') {
+           localStorage.setItem("data", string);
+      }
     }
   }, [data]);
   function handleCheck(id) {
