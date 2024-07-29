@@ -2,7 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { MyContext } from "../MyContext";
 import InputChange from "./InputChange.js";
 import Tasks from "./Tasks.js";
-const task = JSON.parse(localStorage.getItem("data"));
+if (typeof window !== 'undefined') {
+  const task = JSON.parse(localStorage.getItem("data"));
+}
 
 function AllTasks() {
   const { data, setData,setDeleteData } = useContext(MyContext);
