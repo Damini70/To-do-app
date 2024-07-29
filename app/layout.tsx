@@ -5,12 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { MyContext } from "./MyContext";
 
-interface MyContextType {
-  data: never[];
-  setData: React.Dispatch<React.SetStateAction<never[]>>;
-  deleteData: never[];
-  setDeleteData: React.Dispatch<React.SetStateAction<never[]>>;
-}
+
 const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
