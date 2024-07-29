@@ -15,7 +15,9 @@ function Form() {
   useEffect(() => {
     if (data.length > 0) {
       const string = JSON.stringify(data);
-      localStorage.setItem("data", string);
+      if (typeof window !== 'undefined') { 
+            localStorage.setItem("data", string);
+     }
     }
   }, [data]);
 
