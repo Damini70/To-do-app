@@ -5,7 +5,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { MyContext } from "./MyContext";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
@@ -24,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <MyContext.Provider value={{ data, setData,deleteData, setDeleteData }}>
+        <MyContext.Provider
+          value={{ data, setData, deleteData, setDeleteData }}
+        >
           {children}
         </MyContext.Provider>
       </body>
