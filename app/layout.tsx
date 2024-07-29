@@ -23,8 +23,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [data, setData] = useState([]);
-  const [deleteData, setDeleteData] = useState([]);
+  const [data, setData] = useState<never[]>([]);
+  const [deleteData, setDeleteData] = useState<never[]>([]);
 
   return (
     <html lang="en">
