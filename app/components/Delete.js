@@ -1,4 +1,4 @@
-import { MyContext } from "../MyContext.js";
+import { MyContext } from "../MyContext.ts";
 import React, { useContext } from "react";
 
 function Delete() {

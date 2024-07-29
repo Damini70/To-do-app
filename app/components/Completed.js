@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MyContext } from "../MyContext.js";
+import { MyContext } from "../MyContext.ts";
 import Tasks from "./Tasks.js";
 
 function Completed() {
